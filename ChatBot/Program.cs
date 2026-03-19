@@ -123,7 +123,7 @@ static string GetRespone(string question)
     {
         botAnswer = "Bot:To protect your personal information online, be cautious about what you share on social media and other platforms. Use strong, unique passwords for your accounts, enable two-factor authentication, and be mindful of phishing attempts that may try to steal your information.";
     }
-    else
+    else i
     else
     {
         botAnswer = "Bot:I'm sorry, I don't have an answer for that question. Please ask another one related to cybersecurity.";
