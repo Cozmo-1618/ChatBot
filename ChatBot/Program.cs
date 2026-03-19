@@ -87,7 +87,8 @@ static string GetRespone(string question)
     {
         botAnswer = "Bot: I help you stay safe online by teaching cybersecurity tips.";
     }
-    else if (question == "what can i ask you about")
+    //else if (question == "what can i ask you about")
+    else if (question.Contains("ask") || question.Contains("what topics"))
     {
         botAnswer = "Bot:You can ask me about various cybersecurity topics such as common cyber threats, best practices for online safety, how to protect your personal information, and more.";
     }
