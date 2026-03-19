@@ -4,6 +4,8 @@ using System.IO;
 using NAudio.Wave; // Make sure you've installed the NuGet package!
 
 
+DisplayHeader();
+
 /*Console.ForegroundColor = ConsoleColor.Yellow;
 Console.WriteLine("Hello, Welcome to the Cybersecurity awareness Bot. i'm here to help you stay safe online!");
 Console.ResetColor();*/
@@ -131,6 +133,28 @@ static string GetRespone(string question)
 
     return botAnswer;
 
+}
+
+
+static void DisplayHeader()
+{
+    string asciiArt = @"
+  ██████╗██╗   ██╗██████╗ ███████╗██████╗ 
+ ██╔════╝╚██╗ ██╔╝██╔══██╗██╔════╝██╔══██╗
+ ██║      ╚████╔╝ ██████╔╝█████╗  ██████╔╝
+ ██║       ╚██╔╝  ██╔══██╗██╔══╝  ██╔══██╗
+ ╚██████╗   ██║   ██████╔╝███████╗██║  ██║
+  ╚═════╝   ╚═╝   ╚═════╝ ╚══════╝╚═╝  ╚═╝
+     CYBERSECURITY AWARENESS BOT
+";
+
+    Console.ForegroundColor = ConsoleColor.Green;
+    Console.WriteLine(asciiArt);
+
+    Console.ForegroundColor = ConsoleColor.DarkGreen;
+    Console.WriteLine("========================================");
+
+    Console.ResetColor();
 }
 
 
